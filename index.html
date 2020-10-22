@@ -16,7 +16,7 @@
 <body>
 
     <!-- ////////// NAVBAR ////////// -->
-    <nav class="navbar bg-light navbar-expand-md py-3 fixed-top">
+    <nav class="navbar navbar-light bg-light navbar-expand-lg py-3 fixed-top">
         <div class="container">
             <a href="#home" class="navbar-brand">
                 <img src="./img/mlogo.png" class="img-fluid" width="50" height="50" alt="logo">
@@ -49,15 +49,16 @@
         <div class="primary-overlay">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-mn-12">
+                    <div class="col-lg-6 col-md-12">
                         <h1 class="display-1  mt-5 pt-5">Do What You Dream Of...</h1>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
                             deleniti.</p>
 
-                        <a href="#" class="btn btn-outline-light btn-lg"><i class="fa fa-arrow-right"></i> Read More</a>
+                        <a href="#" class="btn btn-outline-light btn-lg rounded-0"><i class="fa fa-arrow-right"></i>
+                            Read More</a>
                     </div>
-                    <div class="col-md-6">
-                        <img src="./img/book.png" class="img-fluid" alt="book">
+                    <div class="col-lg-6">
+                        <img src="./img/book.png" class="img-fluid d-none d-lg-block" alt="book">
                     </div>
                 </div>
             </div>
@@ -65,35 +66,274 @@
     </section>
 
     <!-- ////////// SUBSCRIBE ////////// -->
-<section id="subscribe" class="py-5">
-    <div class="container">
-        <form class="row" id="subscribebox">
-            <div class="col-md-4">
-                <div class="form-group mb-0 my-md-3 my-lg-0">
-                    <input type="text" placeholder="Name" class="form-control form-control-lg">
+    <section id="subscribe" class="py-5">
+        <div class="container">
+            <form class="row">
+                <div class="col-lg-4">
+                    <div class="form-group mb-0 my-md-3 my-lg-0">
+                        <input type="text" placeholder="Name" class="form-control form-control-lg rounded-0">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group my-2 my-md-3 my-lg-0">
+                        <input type="email" placeholder="Email" class="form-control form-control-lg rounded-0">
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-0 my-md-3 my-lg-0">
+                    <button class="btn btn-lg btn-block text-light rounded-0" id="subscribebtn">
+                        <i class="fa fa-envelope-open-o"> </i>
+                        Subscribe
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- ////////// Boxes ////////// -->
+    <section id="boxes" class="py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h3 class="text-info">Be Better</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eius?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card bg-info text-light bg-that-color">
+                        <div class="card-body">
+                            <h3 class="text-light">Be Smarter</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eius?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h3 class="text-info">Be Faster</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eius?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card bg-info text-light bg-that-color">
+                        <div class="card-body">
+                            <h3 class="text-light">Be Stronger</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eius?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="form-group mb-0 my-md-3 my-lg-0">
-                    <input type="email" placeholder="Email" class="form-control form-control-lg">
+        </div>
+    </section>
+
+    <!-- ////////// ABOUT ////////// -->
+    <section id="about" class="bg-light py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="info-book">
+                        <h2 class="display-4 text-info">Why This Book?</h2>
+                        <p class="lead mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+                            ducimus. Eaque quia debitis libero expedita numquam in alias, tenetur fuga?</p>
+                    </div>
+                    <!-- ////////// accordion ////////// -->
+                    <div id="accordion" class="pt-5" role="tablist">
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <div data-toggle="collapse" href="#collapse1">
+                                        <i class="fa fa-arrow-circle-down"></i> Get Inspired
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse1" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Consequuntur consectetur accusantium, molestias quos, distinctio, labore
+                                        assumenda repellendus, beatae adipisci fuga explicabo iure quia. Facilis
+                                        ratione, aut, impedit id rerum voluptate?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <div data-toggle="collapse" href="#collapse2">
+                                        <i class="fa fa-arrow-circle-down"></i> Gain The Knowledge
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Consequuntur consectetur accusantium, molestias quos, distinctio, labore
+                                        assumenda repellendus, beatae adipisci fuga explicabo iure quia. Facilis
+                                        ratione, aut, impedit id rerum voluptate?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" role="tab">
+                                <h5 class="mb-0">
+                                    <div data-toggle="collapse" href="#collapse3">
+                                        <i class="fa fa-arrow-circle-down"></i> Open Your Mind
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse3" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Consequuntur consectetur accusantium, molestias quos, distinctio, labore
+                                        assumenda repellendus, beatae adipisci fuga explicabo iure quia. Facilis
+                                        ratione, aut, impedit id rerum voluptate?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-0 my-md-3 my-lg-0">
-                <button class="btn btn-lg btn-block text-light" id="subscribebtn">
-                    <i class="fa fa-envelope-open-o"> </i>
-                     Subscribe
-                </button>
+        </div>
+    </section>
+    <!-- ////////// AUTHORS ////////// -->
+    <section id="authors" class="text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="info-authors">
+                        <h2 class="display-4 text-info">Meet The Authors</h2>
+                        <p class="lead mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+                            ducimus. Eaque quia debitis libero expedita numquam in alias, tenetur fuga?</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 py-sm-5 py-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/768px-Bootstrap_logo.svg.png" class="img-fluid rounded-circle w-50 mb-3"
+                                alt="Susan Williams">
+                            <h3>Susan Williams</h3>
+                            <h5>Lead Writer</h5>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolores
+                                earum numquam vel tempora, ut.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 py-sm-5 py-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/768px-Bootstrap_logo.svg.png" class="img-fluid rounded-circle w-50 mb-3"
+                                alt="Susan Williams">
+                            <h3>Grace Smith</h3>
+                            <h5>Co-Writer</h5>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolores
+                                earum numquam vel tempora, ut.</p>
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 py-sm-5 py-md-5 py-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/768px-Bootstrap_logo.svg.png" class="img-fluid rounded-circle w-50 mb-3"
+                                alt="Susan Williams">
+                            <h3>John Doe</h3>
+                            <h5>Editor</h5>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolores
+                                earum numquam vel tempora, ut.</p>
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 py-sm-5 py-md-5 py-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./img/768px-Bootstrap_logo.svg.png" class="img-fluid rounded-circle w-50 mb-3"
+                                alt="Susan Williams">
+                            <h3>Kevin Swanson</h3>
+                            <h5>Artist</h5>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolores
+                                earum numquam vel tempora, ut.</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-        </form>
-    </div>
-</section>
+        </div>
+    </section>
+    
+    <!-- ////////// CONTACT ////////// -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="info-contact">
+                        <h2 class="display-4">Get In Touch</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cumque.</p>
+                    </div>
+                    
+                    <form>
+                        <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">
+                                  <i class="fa fa-user"></i>
+                              </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                          </div>
+
+                          <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">
+                                  <i class="fa fa-envelope"></i>
+                              </span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="basic-addon1">
+                          </div>
+
+                          <div class="input-group input-group-lg mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">
+                                  <i class="fa fa-pencil"></i>
+                              </span>
+                            </div>
+                            <textarea name="message" class="form-control" rows="5"></textarea>
+                          </div>
+
+                          <input type="submit" class="btn btn-info btn-lg btn-block">
+                    </form>
+                </div>
+
+                <div class="col-lg-3 align-self-center">
+                    <img src="./img/mlogo.png" class="img-fluid d-none d-lg-block" alt="logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ////////// FOOTER ////////// -->
+    <footer id="footer-main" class="bg-info py-5 text-center text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="lead">Copyright &copy; 2020 Mizuxe</p>
+                    <p class="lead">Designed by: motasimfuad</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-
-
-
-
+    
 
 
 
